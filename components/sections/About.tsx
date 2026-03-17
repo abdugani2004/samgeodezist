@@ -41,7 +41,7 @@ export function About() {
               </p>
               <div className="mt-6">
                 <Link href="/biz-haqimizda" className="btn-secondary">
-                  Batafsil o'qish
+                  Batafsil o&#39;qish
                 </Link>
               </div>
             </div>

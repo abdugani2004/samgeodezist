@@ -69,13 +69,13 @@ export default function AboutPage() {
                 Biz haqimizda
               </p>
               <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-tight text-brand-navy sm:text-5xl">
-                {companyName} Samarqanddagi geodeziya va muhandislik xizmatlari bilan shug'ullanadi
+                {companyName} Samarqanddagi geodeziya va muhandislik xizmatlari bilan shug&#39;ullanadi
               </h1>
               <p className="mt-5 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
                 Kompaniya 2017-yildan beri geodeziya, topografiya, geologiya va loyihalash
-                yo'nalishlarida faoliyat yuritib keladi. Biz yer uchastkalari, bino-inshootlar va
+                yo&#39;nalishlarida faoliyat yuritib keladi. Biz yer uchastkalari, bino-inshootlar va
                 qurilish maydonlari uchun aniq o'lchov, texnik tahlil hamda hujjatlashtirish
-                xizmatlarini ko'rsatamiz.
+                xizmatlarini ko&#39;rsatamiz.
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -96,13 +96,13 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-bold text-brand-navy">Faoliyatimiz haqida</h2>
                 <div className="mt-5 space-y-4 text-base leading-8 text-slate-600">
                   <p>
-                    Har bir obyekt bo'yicha ishlar texnik aniqlik, muddat va tartibli natija
+                    Har bir obyekt bo&#39;yicha ishlar texnik aniqlik, muddat va tartibli natija
                     tamoyili asosida olib boriladi. Jamoa maydon o'lchovlari, plan tayyorlash,
-                    muhandislik kuzatuvi va loyihalash uchun kerakli ma'lumotlarni tayyorlaydi.
+                    muhandislik kuzatuvi va loyihalash uchun kerakli ma&#39;lumotlarni tayyorlaydi.
                   </p>
                   <p>
-                    Buyurtmachilar uchun jarayon sodda tashkil qilingan: so'rov qabul qilinadi,
-                    obyekt bo'yicha dastlabki tahlil qilinadi, maydonda ish bajariladi va yakunda
+                    Buyurtmachilar uchun jarayon sodda tashkil qilingan: so&#39;rov qabul qilinadi,
+                    obyekt bo&#39;yicha dastlabki tahlil qilinadi, maydonda ish bajariladi va yakunda
                     kelishilgan hujjatlar topshiriladi.
                   </p>
                 </div>
@@ -159,7 +159,7 @@ export default function AboutPage() {
                     href="/"
                     className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:border-brand-gold hover:bg-white/10"
                   >
-                    Bosh sahifaga o'tish
+                    Bosh sahifaga o&#39;tish
                   </Link>
                 </div>
               </div>
