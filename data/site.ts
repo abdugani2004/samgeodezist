@@ -18,7 +18,7 @@ export const workingHours = "Dushanba - Shanba, 09:00 - 18:00";
 
 export const navigation: NavItem[] = [
   { label: "Xizmatlar", href: "#xizmatlar" },
-  { label: "Biz haqimizda", href: "#biz-haqimizda" },
+  { label: "Biz haqimizda", href: "/biz-haqimizda" },
   { label: "Afzalliklar", href: "#afzalliklar" },
   { label: "Aloqa", href: "#aloqa" },
 ];

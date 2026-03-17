@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { companyName, navigation } from "@/data/site";
 import { CloseIcon, MenuIcon } from "@/components/ui/Icons";
 import { Container } from "@/components/ui/Container";
@@ -9,12 +10,15 @@ import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+  const resolveHref = (href: string) => (href.startsWith("#") && !isHomePage ? `/${href}` : href);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/60 bg-white/80 backdrop-blur-xl">
       <Container>
         <div className="flex h-20 items-center justify-between gap-4">
-          <Link href="#" className="group flex items-center gap-3">
+          <Link href="/" className="group flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-navy text-sm font-bold tracking-[0.18em] text-white shadow-[0_12px_28px_rgba(11,58,110,0.22)] transition duration-300 group-hover:scale-105 group-hover:bg-brand-blue">
               SG
             </span>
@@ -32,7 +36,7 @@ export function Header() {
             {navigation.map((item) => (
               <Link
                 key={item.href}
-                href={item.href}
+                href={resolveHref(item.href)}
                 className="relative text-sm font-medium text-slate-700 transition duration-300 hover:text-brand-blue after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-0 after:rounded-full after:bg-brand-gold after:transition-all after:duration-300 hover:after:w-full"
               >
                 {item.label}
@@ -46,7 +50,7 @@ export function Header() {
               Samarqand
             </span>
             <Link
-              href="#buyurtma"
+              href={resolveHref("#buyurtma")}
               className="inline-flex items-center justify-center rounded-full bg-brand-gold px-5 py-3 text-sm font-semibold text-brand-navy transition duration-300 hover:-translate-y-0.5 hover:bg-brand-navy hover:text-white hover:shadow-[0_16px_36px_rgba(11,58,110,0.28)]"
             >
               Buyurtma berish
@@ -73,7 +77,7 @@ export function Header() {
               {navigation.map((item) => (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={resolveHref(item.href)}
                   className="block rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition duration-300 hover:bg-slate-50 hover:text-brand-blue"
                   onClick={() => setIsOpen(false)}
                 >
@@ -81,7 +85,7 @@ export function Header() {
                 </Link>
               ))}
               <Link
-                href="#buyurtma"
+                href={resolveHref("#buyurtma")}
                 className="block rounded-2xl bg-brand-gold px-4 py-3 text-center text-sm font-semibold text-brand-navy transition duration-300 hover:bg-brand-navy hover:text-white"
                 onClick={() => setIsOpen(false)}
               >

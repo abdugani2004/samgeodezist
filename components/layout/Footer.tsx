@@ -1,8 +1,15 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { companyName, contactChannels, services } from "@/data/site";
 import { Container } from "@/components/ui/Container";
 
 export function Footer() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+  const resolveHref = (href: string) => (href.startsWith("#") && !isHomePage ? `/${href}` : href);
+
   return (
     <footer className="relative overflow-hidden border-t border-slate-200 bg-brand-navy text-white">
       <div className="navy-footer-shell absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(217,164,35,0.16),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent)]" />
@@ -26,7 +33,7 @@ export function Footer() {
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link
-                  href="#buyurtma"
+                  href={resolveHref("#buyurtma")}
                   className="inline-flex items-center rounded-full bg-brand-gold px-4 py-2.5 text-sm font-semibold text-brand-navy transition duration-300 hover:-translate-y-0.5 hover:bg-white"
                 >
                   Buyurtma qoldirish
@@ -46,7 +53,7 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               {services.map((service) => (
                 <li key={service.title}>
-                  <Link href="#xizmatlar" className="transition duration-300 hover:pl-1 hover:text-white">
+                  <Link href={resolveHref("#xizmatlar")} className="transition duration-300 hover:pl-1 hover:text-white">
                     {service.title}
                   </Link>
                 </li>

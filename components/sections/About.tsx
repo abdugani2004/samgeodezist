@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { companyName } from "@/data/site";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -38,6 +39,11 @@ export function About() {
                 Zamonaviy uskunalar va amaliy tajriba yordamida yer uchastkalari, bino-inshootlar
                 hamda qurilish maydonlari uchun ishonchli natija beramiz.
               </p>
+              <div className="mt-6">
+                <Link href="/biz-haqimizda" className="btn-secondary">
+                  Batafsil o'qish
+                </Link>
+              </div>
             </div>
           </div>
         </div>
