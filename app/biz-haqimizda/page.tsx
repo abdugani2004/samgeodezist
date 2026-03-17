@@ -74,7 +74,7 @@ export default function AboutPage() {
               <p className="mt-5 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
                 Kompaniya 2017-yildan beri geodeziya, topografiya, geologiya va loyihalash
                 yo&#39;nalishlarida faoliyat yuritib keladi. Biz yer uchastkalari, bino-inshootlar va
-                qurilish maydonlari uchun aniq o'lchov, texnik tahlil hamda hujjatlashtirish
+                qurilish maydonlari uchun aniq olchov, texnik tahlil hamda hujjatlashtirish
                 xizmatlarini ko&#39;rsatamiz.
               </p>
 
@@ -97,7 +97,7 @@ export default function AboutPage() {
                 <div className="mt-5 space-y-4 text-base leading-8 text-slate-600">
                   <p>
                     Har bir obyekt bo&#39;yicha ishlar texnik aniqlik, muddat va tartibli natija
-                    tamoyili asosida olib boriladi. Jamoa maydon o'lchovlari, plan tayyorlash,
+                    tamoyili asosida olib boriladi. Jamoa maydon olchovlari, plan tayyorlash,
                     muhandislik kuzatuvi va loyihalash uchun kerakli ma&#39;lumotlarni tayyorlaydi.
                   </p>
                   <p>
