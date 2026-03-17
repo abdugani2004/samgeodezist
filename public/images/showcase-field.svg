@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" rx="40" fill="#0D3659"/>
+  <rect x="70" y="70" width="1060" height="760" rx="30" fill="url(#sky)"/>
+  <path d="M70 620C210 560 360 600 520 570C710 530 860 590 1130 500V830H70V620Z" fill="#355E35"/>
+  <path d="M70 690C260 640 420 700 600 670C810 630 950 680 1130 640V830H70V690Z" fill="#274927"/>
+  <path d="M470 760 560 470" stroke="#E7EEF6" stroke-width="14" stroke-linecap="round"/>
+  <path d="M620 760 610 470" stroke="#E7EEF6" stroke-width="14" stroke-linecap="round"/>
+  <path d="M760 760 655 470" stroke="#E7EEF6" stroke-width="14" stroke-linecap="round"/>
+  <rect x="535" y="290" width="150" height="155" rx="26" fill="#F4B73B"/>
+  <rect x="560" y="322" width="100" height="62" rx="16" fill="#103454"/>
+  <circle cx="610" cy="353" r="22" fill="#EAF3FD"/>
+  <path d="M610 290V220" stroke="white" stroke-opacity=".65" stroke-width="4" stroke-dasharray="10 12"/>
+  <path d="M610 198 580 238H640L610 198Z" fill="#D9A423"/>
+  <circle cx="610" cy="196" r="70" stroke="white" stroke-opacity=".18" stroke-width="3"/>
+  <rect x="145" y="150" width="260" height="110" rx="24" fill="white" fill-opacity=".14"/>
+  <text x="190" y="214" fill="white" font-family="Arial, sans-serif" font-size="34" font-weight="700">Maydondagi Geodeziya</text>
+  <defs>
+    <linearGradient id="sky" x1="70" y1="70" x2="1130" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#155FA0"/>
+      <stop offset=".55" stop-color="#2A9BD8"/>
+      <stop offset="1" stop-color="#7EC2F2"/>
+    </linearGradient>
+  </defs>
+</svg>

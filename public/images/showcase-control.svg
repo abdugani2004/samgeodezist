@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" rx="40" fill="#163047"/>
+  <rect x="70" y="70" width="1060" height="760" rx="30" fill="url(#bg)"/>
+  <rect x="120" y="180" width="960" height="520" rx="34" fill="#0B3A6E"/>
+  <g stroke="white" stroke-opacity=".16" stroke-width="3">
+    <path d="M180 260H1020"/><path d="M180 360H1020"/><path d="M180 460H1020"/><path d="M180 560H1020"/>
+    <path d="M260 220V660"/><path d="M420 220V660"/><path d="M580 220V660"/><path d="M740 220V660"/><path d="M900 220V660"/>
+  </g>
+  <circle cx="600" cy="440" r="150" stroke="white" stroke-opacity=".18" stroke-width="5"/>
+  <circle cx="600" cy="440" r="92" stroke="#D9A423" stroke-width="8"/>
+  <circle cx="600" cy="440" r="24" fill="#D9A423"/>
+  <path d="M600 255V625M415 440H785" stroke="white" stroke-opacity=".58" stroke-width="6"/>
+  <rect x="180" y="110" width="250" height="90" rx="22" fill="white" fill-opacity=".12"/>
+  <text x="220" y="165" fill="white" font-family="Arial, sans-serif" font-size="32" font-weight="700">Nazorat Paneli</text>
+  <rect x="820" y="250" width="180" height="80" rx="22" fill="white" fill-opacity=".12"/>
+  <text x="860" y="300" fill="#D9A423" font-family="Arial, sans-serif" font-size="28" font-weight="700">86%</text>
+  <rect x="820" y="350" width="180" height="26" rx="13" fill="white" fill-opacity=".14"/>
+  <rect x="820" y="350" width="155" height="26" rx="13" fill="#D9A423"/>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="70" x2="1130" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#143654"/>
+      <stop offset="1" stop-color="#1F7FCC"/>
+    </linearGradient>
+  </defs>
+</svg>

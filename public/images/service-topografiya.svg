@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" rx="40" fill="#0B3A6E"/>
+  <rect x="60" y="60" width="1080" height="780" rx="32" fill="url(#bg)"/>
+  <rect x="110" y="130" width="980" height="640" rx="28" fill="#F7FAFD"/>
+  <g stroke="#C8D8EA" stroke-width="2">
+    <path d="M170 200H1030"/><path d="M170 280H1030"/><path d="M170 360H1030"/><path d="M170 440H1030"/><path d="M170 520H1030"/><path d="M170 600H1030"/>
+    <path d="M240 160V740"/><path d="M390 160V740"/><path d="M540 160V740"/><path d="M690 160V740"/><path d="M840 160V740"/><path d="M990 160V740"/>
+  </g>
+  <path d="M180 610C280 500 360 530 450 450C540 370 640 400 730 330C820 260 910 300 1020 210" stroke="#155FA0" stroke-width="16" stroke-linecap="round"/>
+  <path d="M180 670C290 570 380 590 470 520C560 450 650 470 760 420C850 380 930 390 1020 340" stroke="#D9A423" stroke-width="9" stroke-linecap="round" stroke-dasharray="10 16"/>
+  <circle cx="451" cy="450" r="18" fill="#155FA0"/>
+  <circle cx="730" cy="330" r="18" fill="#D9A423"/>
+  <rect x="790" y="520" width="220" height="160" rx="26" fill="#0B3A6E"/>
+  <path d="M838 584H962M838 624H930" stroke="white" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="968" cy="588" r="22" fill="#D9A423"/>
+  <rect x="150" y="150" width="250" height="100" rx="24" fill="#E8F2FD"/>
+  <text x="190" y="212" fill="#0B3A6E" font-family="Arial, sans-serif" font-size="34" font-weight="700">Topografik Plan</text>
+  <defs>
+    <linearGradient id="bg" x1="60" y1="60" x2="1140" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#164C80"/>
+      <stop offset="1" stop-color="#1F7FCC"/>
+    </linearGradient>
+  </defs>
+</svg>
