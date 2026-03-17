@@ -104,7 +104,7 @@ export function Hero() {
                           Minimal ma&#39;lumot
                         </p>
                         <p className="mt-3 text-base leading-7 text-blue-50 sm:text-lg">
-                          Korxona egasi. So&#39;nggi 5 yildan beri jamoani boshqarib, buyurtmalarni
+                          Korxona egasi. 2017-yildan beri jamoani boshqarib, buyurtmalarni
                           aniq va ishonchli tarzda olib bormoqda.
                         </p>
                       </div>
@@ -116,7 +116,7 @@ export function Hero() {
                         </div>
                         <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur sm:p-5">
                           <p className="text-sm text-blue-100">Tajriba</p>
-                          <p className="mt-2 text-base font-semibold sm:text-lg">5 yil</p>
+                          <p className="mt-2 text-base font-semibold sm:text-lg">2017-yildan beri</p>
                         </div>
                       </div>
                     </div>
