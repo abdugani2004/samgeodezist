@@ -49,6 +49,27 @@ const strengths = [
   "Buyurtmalar bo'yicha tezkor aloqa va amaliy yechim taklif qilinadi.",
 ];
 
+const tenderWins = [
+  {
+    date: "14.03.2024",
+    title: "Nurobod tumanidagi qishloq xojaligiga moljallanmagan yer uchastkalarida toposyomka ishlari",
+    customer: "Davlat aktivlarini boshqarish agentligi Samarqand viloyat hududiy boshqarmasi",
+    amount: "291 006 000 UZS",
+  },
+  {
+    date: "20.02.2024",
+    title: "Ishtixon tumanidagi qishloq xojaligiga moljallanmagan yer uchastkalarida toposyomka ishlari",
+    customer: "Davlat aktivlarini boshqarish agentligi Samarqand viloyat hududiy boshqarmasi",
+    amount: "292 604 000 UZS",
+  },
+  {
+    date: "14.11.2023",
+    title: "Oqdaryo tumanidagi bosh yer uchastkalarida toposyomka ishlarini bajarish",
+    customer: "Davlat aktivlarini boshqarish agentligi Samarqand viloyat hududiy boshqarmasi",
+    amount: "112 464 000 UZS",
+  },
+];
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-brand-ink">
@@ -122,18 +143,18 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="rounded-[28px] border border-brand-navy/10 bg-brand-navy p-6 text-white shadow-[0_24px_60px_rgba(11,58,110,0.18)] sm:p-8">
+              <div className="rounded-[28px] border border-brand-navy/10 bg-[linear-gradient(180deg,rgba(255,248,235,0.96),rgba(255,255,255,1))] p-6 text-brand-navy shadow-[0_24px_60px_rgba(11,58,110,0.10)] sm:p-8">
                 <h2 className="text-2xl font-bold">Aloqa va manzil</h2>
                 <div className="mt-6 space-y-5">
                   <div>
                     <p className="text-sm uppercase tracking-[0.2em] text-brand-gold">Manzil</p>
-                    <p className="mt-2 text-base leading-7 text-blue-50">{companyAddress}</p>
+                    <p className="mt-2 text-base leading-7 text-slate-700">{companyAddress}</p>
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-[0.2em] text-brand-gold">Telefonlar</p>
-                    <div className="mt-2 flex flex-col gap-2 text-base text-blue-50">
+                    <div className="mt-2 flex flex-col gap-2 text-base text-slate-700">
                       {phoneNumbers.map((phone) => (
-                        <Link key={phone} href={`tel:${phone.replaceAll(" ", "")}`} className="hover:text-white">
+                        <Link key={phone} href={`tel:${phone.replaceAll(" ", "")}`} className="hover:text-brand-blue">
                           {phone}
                         </Link>
                       ))}
@@ -141,13 +162,13 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-[0.2em] text-brand-gold">Email</p>
-                    <Link href={`mailto:${companyEmail}`} className="mt-2 block text-base text-blue-50 hover:text-white">
+                    <Link href={`mailto:${companyEmail}`} className="mt-2 block text-base text-slate-700 hover:text-brand-blue">
                       {companyEmail}
                     </Link>
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-[0.2em] text-brand-gold">Ish vaqti</p>
-                    <p className="mt-2 text-base text-blue-50">{workingHours}</p>
+                    <p className="mt-2 text-base text-slate-700">{workingHours}</p>
                   </div>
                 </div>
 
@@ -157,11 +178,52 @@ export default function AboutPage() {
                   </Link>
                   <Link
                     href="/"
-                    className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:border-brand-gold hover:bg-white/10"
+                    className="inline-flex items-center justify-center rounded-full border border-brand-navy/10 px-5 py-3 text-sm font-semibold text-brand-navy transition duration-300 hover:border-brand-gold hover:bg-white"
                   >
                     Bosh sahifaga o&#39;tish
                   </Link>
                 </div>
+              </div>
+            </section>
+
+            <section className="mt-8 rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.05)] sm:p-8">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-gold">
+                    Tender yutuqlari
+                  </p>
+                  <h2 className="mt-2 text-2xl font-bold text-brand-navy">
+                    Ochiq manbalarda ko&#39;ringan yutuqlar
+                  </h2>
+                </div>
+                <Link
+                  href="https://orginfo.uz/organization/11996a7e98c4/"
+                  className="text-sm font-semibold text-brand-blue hover:text-brand-navy"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Manba: Orginfo
+                </Link>
+              </div>
+
+              <div className="mt-6 grid gap-4">
+                {tenderWins.map((item) => (
+                  <div
+                    key={`${item.date}-${item.title}`}
+                    className="rounded-[24px] border border-slate-200 bg-slate-50 p-5"
+                  >
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                      <div>
+                        <p className="text-sm font-semibold text-brand-blue">{item.date}</p>
+                        <h3 className="mt-2 text-lg font-semibold text-brand-navy">{item.title}</h3>
+                        <p className="mt-2 text-sm leading-7 text-slate-600">{item.customer}</p>
+                      </div>
+                      <div className="rounded-full border border-brand-gold/30 bg-white px-4 py-2 text-sm font-semibold text-brand-navy">
+                        {item.amount}
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </section>
           </div>
