@@ -29,8 +29,7 @@ export function Showcase() {
                 />
               </div>
               <div className="p-5 sm:p-6">
-                <h3 className="text-lg font-semibold text-brand-navy sm:text-xl">{item.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{item.description}</p>
+                <p className="text-sm leading-6 text-slate-600 sm:text-base">{item.description}</p>
               </div>
             </article>
           ))}

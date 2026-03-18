@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { companyName, phoneNumbers } from "@/data/site";
 import { ArrowUpRightIcon } from "@/components/ui/Icons";
@@ -15,9 +14,9 @@ export function Hero() {
         <div className="grid items-center gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-10">
           <div className="relative">
             <p className="hero-chip hero-chip-accent inline-flex rounded-full border border-brand-gold/30 bg-brand-gold/10 px-4 py-2 text-sm font-semibold text-brand-navy">
-              O&#39;zbekiston va Samarqand bo&#39;ylab geodeziya va topografiya xizmatlari
+              O&#39;zbekiston bo&#39;ylab geodeziya va topografiya xizmatlari
             </p>
-            <h1 className="mt-5 max-w-3xl text-4xl font-bold leading-[1.02] text-brand-navy sm:text-5xl lg:max-w-2xl lg:text-[4.2rem]">
+            <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-[1.02] text-brand-navy sm:text-5xl lg:max-w-[18ch] lg:text-[4.2rem]">
               O&#39;zbekiston bo&#39;ylab geodeziya va topografiya xizmatlari
             </h1>
             <p className="mt-5 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
@@ -74,51 +73,37 @@ export function Hero() {
               <div className="relative rounded-[28px] bg-gradient-to-br from-brand-navy via-brand-blue to-[#1f7fcc] p-4 text-white sm:p-5">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(217,164,35,0.28),transparent_28%),linear-gradient(160deg,rgba(255,255,255,0.1),transparent_50%)]" />
                 <div className="relative flex flex-col gap-4">
-                  <div className="flex items-start justify-between gap-4 rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur">
+                  <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur">
                     <div>
                       <p className="text-xs uppercase tracking-[0.28em] text-brand-gold sm:text-sm">
-                        Korxona egasi
+                        Bizning jamoa
                       </p>
                       <p className="mt-2 text-2xl font-semibold leading-tight sm:text-3xl">
-                        UROKOV OLIM
+                        Jamoa rasmi shu yerga joylanadi
                       </p>
                     </div>
                   </div>
 
-                  <div className="grid items-stretch gap-4 md:grid-cols-[0.95fr_1.05fr]">
-                    <div className="overflow-hidden rounded-[24px] border border-white/15 bg-slate-950/20">
-                      <div className="relative aspect-[4/4.4] w-full sm:aspect-[4/4.8] md:h-full md:min-h-[320px] md:aspect-auto">
-                        <Image
-                          src="/images/owner-abdugani.jpg"
-                          alt="UROKOV OLIM"
-                          fill
-                          className="object-cover object-center"
-                          sizes="(max-width: 768px) 100vw, 420px"
-                          priority
-                        />
-                      </div>
-                    </div>
+                  <div className="rounded-[24px] border border-dashed border-white/25 bg-slate-950/20 px-6 py-12 text-center sm:px-8 sm:py-16">
+                    <p className="text-base font-semibold text-white sm:text-lg">Bizning jamoa rasmi</p>
+                    <p className="mt-3 text-sm leading-7 text-blue-50 sm:text-base">
+                      Jamoa rasmi tayyor bo&#39;lgach shu joyga joylanadi. Hozircha bu blok kompaniya jamoasi
+                      uchun ajratilgan.
+                    </p>
+                  </div>
 
-                    <div className="flex h-full flex-col justify-between gap-4">
-                      <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur sm:p-5">
-                        <p className="text-xs uppercase tracking-[0.22em] text-blue-100 sm:text-sm">
-                          Minimal ma&#39;lumot
-                        </p>
-                        <p className="mt-3 text-base leading-7 text-blue-50 sm:text-lg">
-                          Korxona egasi. 2017-yildan beri jamoani boshqarib, buyurtmalarni
-                          aniq va ishonchli tarzda olib bormoqda.
-                        </p>
+                  <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur sm:p-5">
+                    <p className="text-xs uppercase tracking-[0.22em] text-blue-100 sm:text-sm">
+                      Korxona egasi
+                    </p>
+                    <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                      <div>
+                        <p className="text-sm text-blue-100">Ism</p>
+                        <p className="mt-2 text-base font-semibold text-white sm:text-lg">UROKOV OLIM</p>
                       </div>
-
-                      <div className="grid gap-4 sm:grid-cols-2">
-                        <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur sm:p-5">
-                          <p className="text-sm text-blue-100">Lavozimi</p>
-                          <p className="mt-2 text-base font-semibold sm:text-lg">Korxona egasi</p>
-                        </div>
-                        <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur sm:p-5">
-                          <p className="text-sm text-blue-100">Tajriba</p>
-                          <p className="mt-2 text-base font-semibold sm:text-lg">2017-yildan beri</p>
-                        </div>
+                      <div>
+                        <p className="text-sm text-blue-100">Tajriba</p>
+                        <p className="mt-2 text-base font-semibold text-white sm:text-lg">2017-yildan beri</p>
                       </div>
                     </div>
                   </div>
