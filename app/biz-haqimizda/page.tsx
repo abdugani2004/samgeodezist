@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
 import { PageShell } from "@/components/layout/PageShell";
 import { Container } from "@/components/ui/Container";
-import { ArrowLeftIcon } from "@/components/ui/Icons";
+import { BackLink } from "@/components/ui/BackLink";
 import {
   companyAddress,
   companyEmail,
@@ -76,13 +76,7 @@ export default function AboutPage() {
       <main className="pb-16 pt-8 sm:pb-20 sm:pt-12 lg:pt-12">
         <Container>
           <div className="mx-auto max-w-5xl">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 rounded-full border border-brand-navy/10 bg-white px-4 py-2 text-sm font-semibold text-brand-navy transition duration-300 hover:border-brand-gold hover:text-brand-blue"
-            >
-              <ArrowLeftIcon />
-              Orqaga qaytish
-            </Link>
+            <BackLink href="/" />
 
             <section className="mt-6 overflow-hidden rounded-[32px] border border-brand-navy/10 bg-[linear-gradient(135deg,rgba(255,248,235,0.92),rgba(255,255,255,0.98))] p-6 sm:p-8 lg:p-10">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">

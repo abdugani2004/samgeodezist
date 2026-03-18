@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/Footer";
 import { PageShell } from "@/components/layout/PageShell";
 import { Container } from "@/components/ui/Container";
+import { BackLink } from "@/components/ui/BackLink";
 import { companyName, getServiceBySlug, services, siteUrl } from "@/data/site";
 
 type ServicePageProps = {
@@ -108,7 +109,8 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
       <PageShell>
       <main className="pb-20 pt-10 sm:pb-24 sm:pt-14 lg:pt-12">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr]">
+          <BackLink href="/xizmatlar" label="Xizmatlarga qaytish" />
+          <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_0.95fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-brand-gold">
                 Xizmat tafsiloti
@@ -148,8 +150,8 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
                 <Link href="/aloqa#buyurtma" className="btn-primary">
                   Buyurtma berish
                 </Link>
-                <Link href="/" className="btn-secondary">
-                  Bosh sahifaga qaytish
+                <Link href="/xizmatlar" className="btn-secondary">
+                  Xizmatlarga qaytish
                 </Link>
               </div>
             </div>

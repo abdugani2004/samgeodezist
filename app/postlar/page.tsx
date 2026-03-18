@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
 import { PageShell } from "@/components/layout/PageShell";
 import { NewsSection } from "@/components/sections/NewsSection";
+import { Container } from "@/components/ui/Container";
+import { BackLink } from "@/components/ui/BackLink";
 import { companyName, siteUrl } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -21,6 +23,9 @@ export default function PostsPage() {
   return (
     <PageShell>
       <main className="pb-16 pt-8 sm:pb-20 sm:pt-10 lg:pt-12">
+        <Container>
+          <BackLink href="/" />
+        </Container>
         <NewsSection />
       </main>
       <Footer />

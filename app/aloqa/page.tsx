@@ -4,6 +4,8 @@ import { PageShell } from "@/components/layout/PageShell";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { ContactInfo } from "@/components/sections/ContactInfo";
 import { MapSection } from "@/components/sections/MapSection";
+import { Container } from "@/components/ui/Container";
+import { BackLink } from "@/components/ui/BackLink";
 import { companyName, siteUrl } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -23,6 +25,9 @@ export default function ContactPage() {
   return (
     <PageShell>
       <main className="pb-16 pt-8 sm:pb-20 sm:pt-10 lg:pt-12">
+        <Container>
+          <BackLink href="/" />
+        </Container>
         <ContactForm />
         <ContactInfo />
         <MapSection />
