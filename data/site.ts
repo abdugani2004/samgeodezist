@@ -226,19 +226,34 @@ export const projects: Project[] = [
 
 export const showcaseItems: ShowcaseItem[] = [
   {
-    title: "Total station bilan maydon olchovi",
-    description: "Mutaxassislar obyektga chiqib geodeziya asboblari yordamida olchov va belgilash ishlarini bajaradi.",
-    image: "/images/showcase-field.svg",
+    title: "Bizning ishlar 01",
+    description: "Maydondagi amaliy geodeziya va topografiya jarayonidan lavha.",
+    image: "/images/works/work-1.jpg",
   },
   {
-    title: "Topografik plan va chizma tayyorlash",
-    description: "Ofis va texnik jarayonda topografik plan, hujjat va koordinata materiallari tartibli tayyorlanadi.",
-    image: "/images/showcase-plan.svg",
+    title: "Bizning ishlar 02",
+    description: "Obyekt bo'yicha bajarilgan texnik ishlarning ko'rinishi.",
+    image: "/images/works/work-2.jpg",
   },
   {
-    title: "Geodezik nazorat va monitoring",
-    description: "Qurilish maydonida geodezik tekshiruv, aniqlik nazorati va bosqichma-bosqich monitoring olib boriladi.",
-    image: "/images/showcase-control.svg",
+    title: "Bizning ishlar 03",
+    description: "Daladagi olchov va nazorat ishlari jarayonidan namuna.",
+    image: "/images/works/work-3.jpg",
+  },
+  {
+    title: "Bizning ishlar 04",
+    description: "Mutaxassislar tomonidan olib borilgan amaliy ishlar lavhasi.",
+    image: "/images/works/work-4.jpg",
+  },
+  {
+    title: "Bizning ishlar 05",
+    description: "Topografiya va geodeziya bo'yicha bajarilgan ish ko'rinishi.",
+    image: "/images/works/work-5.jpg",
+  },
+  {
+    title: "Bizning ishlar 06",
+    description: "Joyida bajarilgan texnik o'lchov va hujjatlashtirish jarayoni.",
+    image: "/images/works/work-6.jpg",
   },
 ];
 
