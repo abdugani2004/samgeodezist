@@ -92,21 +92,6 @@ export function Hero() {
                     </p>
                   </div>
 
-                  <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur sm:p-5">
-                    <p className="text-xs uppercase tracking-[0.22em] text-blue-100 sm:text-sm">
-                      Korxona egasi
-                    </p>
-                    <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                      <div>
-                        <p className="text-sm text-blue-100">Ism</p>
-                        <p className="mt-2 text-base font-semibold text-white sm:text-lg">UROKOV OLIM</p>
-                      </div>
-                      <div>
-                        <p className="text-sm text-blue-100">Tajriba</p>
-                        <p className="mt-2 text-base font-semibold text-white sm:text-lg">2017-yildan beri</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

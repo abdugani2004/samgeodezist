@@ -14,7 +14,7 @@ import type {
 export const companyName = "SAMGEODEZIST MCHJ";
 export const siteUrl = "https://samgeodezist.uz";
 export const companyEmail = "www.olim-urokov@mail.ru";
-export const companyAddress = "Samarqand shahar Spitamenshoh 165-uy";
+export const companyAddress = "Samarqand shahar Spitamen Shoh ko'chasi 169-uy";
 export const workingHours = "Dushanba - Shanba, 09:00 - 18:00";
 
 export const navigation: NavItem[] = [
