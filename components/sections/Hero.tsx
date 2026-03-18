@@ -146,7 +146,7 @@ export function Hero() {
                       />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(3,9,20,0.72)_100%)]" />
 
-                      <div className="absolute left-4 right-4 top-4 flex items-start justify-between gap-4">
+                      <div className="absolute left-4 right-4 top-8 flex items-start justify-between gap-4 sm:top-10">
                         <div className="rounded-[20px] border border-white/20 bg-brand-navy/65 px-4 py-3 backdrop-blur">
                           <p className="text-xs uppercase tracking-[0.24em] text-brand-gold">
                             Bizning jamoa
