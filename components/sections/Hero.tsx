@@ -41,11 +41,11 @@ export function Hero() {
             </div>
 
             <div className="mt-7 flex flex-col gap-4 sm:flex-row">
-              <Link href="#buyurtma" className="btn-primary">
+              <Link href="/aloqa#buyurtma" className="btn-primary">
                 Buyurtma berish
                 <ArrowUpRightIcon />
               </Link>
-              <Link href="#aloqa" className="btn-secondary">
+              <Link href="/aloqa" className="btn-secondary">
                 Bog&#39;lanish
               </Link>
             </div>

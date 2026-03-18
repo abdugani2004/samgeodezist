@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
+import { PageShell } from "@/components/layout/PageShell";
 import { Container } from "@/components/ui/Container";
 import { ArrowLeftIcon } from "@/components/ui/Icons";
 import {
@@ -72,9 +72,8 @@ const tenderWins = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white text-brand-ink">
-      <Header />
-      <main className="pb-16 pt-8 sm:pb-20 sm:pt-12">
+    <PageShell>
+      <main className="pb-16 pt-8 sm:pb-20 sm:pt-12 lg:pt-12">
         <Container>
           <div className="mx-auto max-w-5xl">
             <Link
@@ -173,7 +172,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <Link href="/#buyurtma" className="btn-primary">
+                  <Link href="/aloqa#buyurtma" className="btn-primary">
                     Buyurtma berish
                   </Link>
                   <Link
@@ -230,6 +229,6 @@ export default function AboutPage() {
         </Container>
       </main>
       <Footer />
-    </div>
+    </PageShell>
   );
 }

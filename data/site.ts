@@ -18,11 +18,11 @@ export const companyAddress = "Samarqand shahar Spitamen Shoh ko'chasi 169-uy";
 export const workingHours = "Dushanba - Shanba, 09:00 - 18:00";
 
 export const navigation: NavItem[] = [
-  { label: "Xizmatlar", href: "#xizmatlar" },
-  { label: "Bizning ishlar", href: "#bizning-ishlar" },
-  { label: "Postlar", href: "#postlar" },
+  { label: "Xizmatlar", href: "/xizmatlar" },
+  { label: "Bizning ishlar", href: "/bizning-ishlar" },
+  { label: "Postlar", href: "/postlar" },
   { label: "Biz haqimizda", href: "/biz-haqimizda" },
-  { label: "Aloqa", href: "#aloqa" },
+  { label: "Aloqa", href: "/aloqa" },
 ];
 
 export const phoneNumbers = ["+998 97 919 11 83", "+998 91 550 02 91"];
@@ -254,6 +254,31 @@ export const showcaseItems: ShowcaseItem[] = [
     title: "Bizning ishlar 06",
     description: "Joyida bajarilgan texnik o'lchov va hujjatlashtirish jarayoni.",
     image: "/images/works/work-6.jpg",
+  },
+  {
+    title: "Bizning ishlar 07",
+    description: "Obyektdagi navbatdagi amaliy ishlar ko'rinishi.",
+    image: "/images/works/work-7.jpg",
+  },
+  {
+    title: "Bizning ishlar 08",
+    description: "Topografiya va geodeziya bo'yicha bajarilgan real ish lavhasi.",
+    image: "/images/works/work-8.jpg",
+  },
+  {
+    title: "Bizning ishlar 09",
+    description: "Maydonda olib borilgan texnik nazorat va o'lchov jarayoni.",
+    image: "/images/works/work-9.jpg",
+  },
+  {
+    title: "Bizning ishlar 10",
+    description: "Jamoaning obyekt bo'yicha ishlashidan yana bir ko'rinish.",
+    image: "/images/works/work-10.jpg",
+  },
+  {
+    title: "Bizning ishlar 11",
+    description: "Daladagi geodezik ishlar va hujjatlashtirishdan lavha.",
+    image: "/images/works/work-11.jpg",
   },
 ];
 

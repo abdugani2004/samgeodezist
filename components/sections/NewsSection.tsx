@@ -26,8 +26,11 @@ export function NewsSection() {
               <h3 className="mt-3 text-lg font-semibold text-brand-navy sm:text-xl">{post.title}</h3>
               <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{post.description}</p>
               <div className="mt-5">
-                <Link href={post.href} className="text-sm font-semibold text-brand-blue transition hover:text-brand-navy">
-                  Batafsil o‘qish
+                <Link
+                  href={post.href}
+                  className="text-sm font-semibold text-brand-blue transition hover:text-brand-navy"
+                >
+                  Batafsil o&#39;qish
                 </Link>
               </div>
             </article>

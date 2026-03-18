@@ -1,17 +1,8 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
-import { About } from "@/components/sections/About";
-import { ContactForm } from "@/components/sections/ContactForm";
-import { ContactInfo } from "@/components/sections/ContactInfo";
+import { PageShell } from "@/components/layout/PageShell";
 import { Hero } from "@/components/sections/Hero";
-import { MapSection } from "@/components/sections/MapSection";
-import { NewsSection } from "@/components/sections/NewsSection";
-import { Process } from "@/components/sections/Process";
-import { Services } from "@/components/sections/Services";
-import { Showcase } from "@/components/sections/Showcase";
 import { Stats } from "@/components/sections/Stats";
-import { WhyUs } from "@/components/sections/WhyUs";
 import { companyName, siteUrl } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -39,22 +30,12 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="bg-white text-brand-ink">
-      <Header />
-      <main>
+    <PageShell>
+      <main className="pb-16 pt-8 sm:pb-20 sm:pt-10 lg:pt-12">
         <Hero />
-        <Services />
-        <Showcase />
         <Stats />
-        <NewsSection />
-        <About />
-        <WhyUs />
-        <Process />
-        <ContactForm />
-        <ContactInfo />
-        <MapSection />
       </main>
       <Footer />
-    </div>
+    </PageShell>
   );
 }

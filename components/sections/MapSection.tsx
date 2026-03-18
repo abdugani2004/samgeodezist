@@ -23,6 +23,8 @@ function MapFrame({ query = "Samarqand" }: MapFrameProps) {
 }
 
 export function MapSection() {
+  const addressSearchUrl = `https://www.openstreetmap.org/search?query=${encodeURIComponent(companyAddress)}`;
+
   return (
     <section className="pb-16 sm:pb-20">
       <Container>
@@ -37,12 +39,12 @@ export function MapSection() {
           </div>
           <div className="mt-4">
             <a
-              href="https://www.openstreetmap.org/?mlat=39.6542&mlon=66.9750#map=16/39.6542/66.9750"
+              href={addressSearchUrl}
               target="_blank"
               rel="noreferrer"
               className="text-sm font-semibold text-brand-blue transition hover:text-brand-navy"
             >
-              OpenStreetMap’da ochish
+              OpenStreetMapda ochish
             </a>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
+import { PageShell } from "@/components/layout/PageShell";
 import { Container } from "@/components/ui/Container";
 import { companyName, getServiceBySlug, services, siteUrl } from "@/data/site";
 
@@ -105,8 +105,8 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <Header />
-      <main className="pb-20 pt-10 sm:pb-24 sm:pt-14">
+      <PageShell>
+      <main className="pb-20 pt-10 sm:pb-24 sm:pt-14 lg:pt-12">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr]">
             <div>
@@ -145,7 +145,7 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/#buyurtma" className="btn-primary">
+                <Link href="/aloqa#buyurtma" className="btn-primary">
                   Buyurtma berish
                 </Link>
                 <Link href="/" className="btn-secondary">
@@ -163,6 +163,7 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
         </Container>
       </main>
       <Footer />
+      </PageShell>
     </div>
   );
 }

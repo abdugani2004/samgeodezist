@@ -50,7 +50,7 @@ export function Header() {
               Samarqand
             </span>
             <Link
-              href={resolveHref("#buyurtma")}
+              href="/aloqa#buyurtma"
               className="inline-flex items-center justify-center rounded-full bg-brand-gold px-5 py-3 text-sm font-semibold text-brand-navy transition duration-300 hover:-translate-y-0.5 hover:bg-brand-navy hover:text-white hover:shadow-[0_16px_36px_rgba(11,58,110,0.28)]"
             >
               Buyurtma berish
@@ -85,7 +85,7 @@ export function Header() {
                 </Link>
               ))}
               <Link
-                href={resolveHref("#buyurtma")}
+                href="/aloqa#buyurtma"
                 className="block rounded-2xl bg-brand-gold px-4 py-3 text-center text-sm font-semibold text-brand-navy transition duration-300 hover:bg-brand-navy hover:text-white"
                 onClick={() => setIsOpen(false)}
               >

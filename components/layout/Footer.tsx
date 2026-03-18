@@ -7,8 +7,6 @@ import { Container } from "@/components/ui/Container";
 
 export function Footer() {
   const pathname = usePathname();
-  const isHomePage = pathname === "/";
-  const resolveHref = (href: string) => (href.startsWith("#") && !isHomePage ? `/${href}` : href);
 
   return (
     <footer className="relative overflow-hidden border-t border-slate-200 bg-brand-navy text-white">
@@ -33,7 +31,7 @@ export function Footer() {
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link
-                  href={resolveHref("#buyurtma")}
+                  href="/aloqa#buyurtma"
                   className="inline-flex items-center rounded-full bg-brand-gold px-4 py-2.5 text-sm font-semibold text-brand-navy transition duration-300 hover:-translate-y-0.5 hover:bg-white"
                 >
                   Buyurtma qoldirish
@@ -53,7 +51,7 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-slate-300">
               {services.map((service) => (
                 <li key={service.title}>
-                  <Link href={resolveHref("#xizmatlar")} className="transition duration-300 hover:pl-1 hover:text-white">
+                  <Link href={`/xizmatlar/${service.slug}`} className="transition duration-300 hover:pl-1 hover:text-white">
                     {service.title}
                   </Link>
                 </li>
