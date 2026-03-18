@@ -178,8 +178,8 @@ export const stats: Stat[] = [
 
 export const trustItems: TrustItem[] = [
   {
-    title: "Total Station",
-    description: "Maydon olchovlari yuqori aniqlikdagi total station uskunalari bilan bajariladi.",
+    title: "Geodezik uskuna",
+    description: "Maydon olchovlari yuqori aniqlikdagi geodezik uskunalar bilan bajariladi.",
   },
   {
     title: "Elektron taxeometr",
@@ -290,7 +290,7 @@ export const posts: Post[] = [
     href: "/biz-haqimizda",
   },
   {
-    title: "Total station va elektron taxeometr afzalliklari",
+    title: "Geodezik uskuna va elektron taxeometr afzalliklari",
     description: "Zamonaviy uskunalar yordamida geodezik olchovlarda qanday aniqlik olinishi haqida.",
     date: "18.03.2026",
     href: "/biz-haqimizda",

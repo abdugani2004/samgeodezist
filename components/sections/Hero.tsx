@@ -22,7 +22,7 @@ export function Hero() {
 
             <div className="mt-5 flex flex-wrap gap-3">
               {[
-                "Total station",
+                "Geodezik uskuna",
                 "Elektron taxeometr",
                 "Tezkor chiqish",
                 "Texnik hujjatlar",
@@ -70,23 +70,12 @@ export function Hero() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(217,164,35,0.28),transparent_28%),linear-gradient(160deg,rgba(255,255,255,0.1),transparent_50%)]" />
                 <div className="relative flex flex-col gap-4">
                   <div className="rounded-[24px] border border-white/15 bg-white/10 p-4 backdrop-blur">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.28em] text-brand-gold sm:text-sm">
-                        Bizning jamoa
-                      </p>
-                      <p className="mt-2 text-2xl font-semibold leading-tight sm:text-3xl">
-                        Jamoa rasmi shu yerga joylanadi
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="rounded-[24px] border border-dashed border-white/25 bg-slate-950/20 px-6 py-12 text-center sm:px-8 sm:py-16">
-                    <p className="text-base font-semibold text-white sm:text-lg">Bizning jamoa rasmi</p>
-                    <p className="mt-3 text-sm leading-7 text-blue-50 sm:text-base">
-                      Jamoa rasmi tayyor bo&#39;lgach shu joyga joylanadi. Hozircha bu blok kompaniya jamoasi
-                      uchun ajratilgan.
+                    <p className="text-xs uppercase tracking-[0.28em] text-brand-gold sm:text-sm">
+                      Bizning jamoa
                     </p>
                   </div>
+
+                  <div className="min-h-[420px] rounded-[24px] border border-dashed border-white/25 bg-slate-950/20 sm:min-h-[500px]" />
 
                 </div>
               </div>
