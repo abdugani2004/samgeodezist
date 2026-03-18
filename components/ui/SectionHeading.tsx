@@ -20,7 +20,7 @@ export function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="section-title mt-3 text-balance">{title}</h2>
+      <h2 className="section-title mt-3 text-pretty">{title}</h2>
       <p className={`section-copy ${alignment} mt-3 max-w-2xl`}>{description}</p>
     </div>
   );

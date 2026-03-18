@@ -84,11 +84,11 @@ a {
 }
 
 .section-title {
-  @apply text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl;
+  @apply text-2xl font-bold tracking-tight text-brand-navy sm:text-4xl;
 }
 
 .section-copy {
-  @apply mt-4 max-w-3xl text-base leading-7 sm:text-lg;
+  @apply mt-4 max-w-3xl text-sm leading-7 sm:text-lg;
   color: var(--muted-text);
 }
 

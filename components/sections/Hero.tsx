@@ -60,25 +60,27 @@ export function Hero() {
               </Link>
             </div>
 
-            <div className="mt-5 grid gap-3 lg:grid-cols-5">
-              {services.map((service) => (
-                <Link
-                  key={service.slug}
-                  href={`/xizmatlar#${service.slug}`}
-                  className="rounded-[22px] border border-white/12 bg-brand-blue/75 px-4 py-4 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-brand-blue"
-                >
-                  {service.title}
-                </Link>
-              ))}
+            <div className="mt-5 -mx-1 overflow-x-auto pb-1">
+              <div className="flex min-w-max gap-3 px-1 lg:grid lg:min-w-0 lg:grid-cols-5">
+                {services.map((service) => (
+                  <Link
+                    key={service.slug}
+                    href={`/xizmatlar#${service.slug}`}
+                    className="min-w-[150px] rounded-[22px] border border-white/12 bg-brand-blue/75 px-4 py-4 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-brand-blue lg:min-w-0"
+                  >
+                    {service.title}
+                  </Link>
+                ))}
+              </div>
             </div>
 
-            <div className="mt-8 grid items-end gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+            <div className="mt-8 grid items-end gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
               <div className="relative">
                 <p className="hero-chip hero-chip-accent inline-flex rounded-full border border-brand-gold/30 bg-brand-gold/10 px-5 py-3 text-base font-semibold text-brand-gold sm:text-lg">
                   O&#39;zbekiston bo&#39;ylab geodeziya va topografiya xizmatlari
                 </p>
 
-                <h1 className="mt-5 max-w-[11ch] text-4xl font-bold leading-[0.98] text-white sm:text-5xl lg:text-[5rem]">
+                <h1 className="mt-5 max-w-[11ch] text-3xl font-bold leading-[0.98] text-white sm:text-5xl lg:text-[5rem]">
                   Geodeziya ishlari uchun kuchli texnik jamoa
                 </h1>
 
@@ -142,11 +144,11 @@ export function Hero() {
                         alt="Geodeziya ishlari"
                         width={860}
                         height={980}
-                        className="h-[420px] w-full object-cover object-center sm:h-[520px]"
+                        className="h-[320px] w-full object-cover object-center sm:h-[420px] lg:h-[520px]"
                       />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(3,9,20,0.72)_100%)]" />
 
-                      <div className="absolute left-4 right-4 top-8 flex items-start justify-between gap-4 sm:top-10">
+                      <div className="absolute left-3 right-3 top-4 flex flex-col gap-3 sm:left-4 sm:right-4 sm:top-10 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
                         <div className="rounded-[20px] border border-white/20 bg-brand-navy/65 px-4 py-3 backdrop-blur">
                           <p className="text-xs uppercase tracking-[0.24em] text-brand-gold">
                             Bizning jamoa
@@ -156,7 +158,7 @@ export function Hero() {
                           </p>
                         </div>
 
-                        <div className="rounded-[20px] border border-white/20 bg-white/12 px-4 py-3 text-right backdrop-blur">
+                        <div className="rounded-[20px] border border-white/20 bg-white/12 px-4 py-3 backdrop-blur sm:text-right">
                           <p className="text-xs uppercase tracking-[0.24em] text-slate-300">
                             Hudud
                           </p>
@@ -166,7 +168,7 @@ export function Hero() {
                         </div>
                       </div>
 
-                      <div className="absolute inset-x-4 bottom-4 grid gap-3 sm:grid-cols-2">
+                      <div className="absolute inset-x-3 bottom-3 grid gap-3 sm:inset-x-4 sm:bottom-4 sm:grid-cols-2">
                         <div className="rounded-[22px] border border-white/15 bg-brand-blue/70 px-4 py-4 backdrop-blur">
                           <p className="text-xs uppercase tracking-[0.22em] text-brand-gold">
                             Maydon ishlari

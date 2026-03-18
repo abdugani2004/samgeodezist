@@ -17,16 +17,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/60 bg-white/80 backdrop-blur-xl">
       <Container>
-        <div className="flex h-20 items-center justify-between gap-4">
-          <Link href="/" className="group flex items-center gap-3">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-navy text-sm font-bold tracking-[0.18em] text-white shadow-[0_12px_28px_rgba(11,58,110,0.22)] transition duration-300 group-hover:scale-105 group-hover:bg-brand-blue">
+        <div className="flex h-16 items-center justify-between gap-3 sm:h-20 sm:gap-4">
+          <Link href="/" className="group flex min-w-0 items-center gap-3">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-brand-navy text-sm font-bold tracking-[0.18em] text-white shadow-[0_12px_28px_rgba(11,58,110,0.22)] transition duration-300 group-hover:scale-105 group-hover:bg-brand-blue sm:h-12 sm:w-12">
               SG
             </span>
-            <div>
+            <div className="min-w-0">
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand-gold">
                 Geodeziya
               </p>
-              <p className="text-base font-bold text-brand-navy transition duration-300 group-hover:text-brand-blue sm:text-lg">
+              <p className="truncate text-sm font-bold text-brand-navy transition duration-300 group-hover:text-brand-blue sm:text-lg">
                 {companyName}
               </p>
             </div>
@@ -70,27 +70,31 @@ export function Header() {
 
         {isOpen ? (
           <div className="pb-5 lg:hidden">
-            <div className="panel space-y-2 p-4">
-              <div className="px-2 pb-2">
+            <div className="panel space-y-4 p-4">
+              <div className="flex items-center justify-between gap-3">
                 <ThemeToggle />
-              </div>
-              {navigation.map((item) => (
                 <Link
-                  key={item.href}
-                  href={resolveHref(item.href)}
-                  className="block rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition duration-300 hover:bg-slate-50 hover:text-brand-blue"
+                  href="/aloqa#buyurtma"
+                  className="inline-flex shrink-0 items-center justify-center rounded-full bg-brand-gold px-4 py-2 text-xs font-semibold text-brand-navy transition duration-300 hover:bg-brand-navy hover:text-white"
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.label}
+                  Buyurtma
                 </Link>
-              ))}
-              <Link
-                href="/aloqa#buyurtma"
-                className="block rounded-2xl bg-brand-gold px-4 py-3 text-center text-sm font-semibold text-brand-navy transition duration-300 hover:bg-brand-navy hover:text-white"
-                onClick={() => setIsOpen(false)}
-              >
-                Buyurtma berish
-              </Link>
+              </div>
+              <div className="-mx-1 overflow-x-auto pb-1">
+                <div className="flex min-w-max gap-2 px-1">
+                  {navigation.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={resolveHref(item.href)}
+                      className="inline-flex rounded-full border border-brand-navy/10 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition duration-300 hover:border-brand-gold hover:bg-slate-50 hover:text-brand-blue"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         ) : null}

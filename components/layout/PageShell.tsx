@@ -12,7 +12,7 @@ export function PageShell({ children }: PropsWithChildren) {
   const pathname = usePathname();
 
   return (
-    <div className="min-h-screen bg-white text-brand-ink">
+    <div className="min-h-screen overflow-x-hidden bg-white text-brand-ink">
       <FloatingContact />
       <div className="lg:hidden">
         <Header />
