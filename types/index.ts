@@ -60,6 +60,13 @@ export type ContactChannel = {
   href?: string;
 };
 
+export type Post = {
+  title: string;
+  description: string;
+  date: string;
+  href: string;
+};
+
 export type OrderFormValues = {
   name: string;
   phone: string;

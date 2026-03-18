@@ -5,13 +5,13 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function Showcase() {
   return (
-    <section className="relative py-16 sm:py-20">
+    <section id="bizning-ishlar" className="relative py-16 sm:py-20">
       <div className="absolute right-0 top-16 h-44 w-44 rounded-full bg-brand-blue/10 blur-3xl" />
       <Container>
         <SectionHeading
-          eyebrow="Vizual"
-          title="Ish jarayonining zamonaviy ko'rinishi"
-          description="Maydon, texnik tahlil va loyiha tayyorlash bosqichlari yagona tizim asosida bajariladi."
+          eyebrow="Bizning ishlar"
+          title="Maydon va obyektlardan ish jarayoni"
+          description="Amaliy ishlarimizdan namunalar, jarayon lavhalari va texnik ish bosqichlari shu bo'limda ko'rsatilgan."
         />
 
         <div className="mt-10 grid gap-5 lg:grid-cols-3">

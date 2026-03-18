@@ -3,35 +3,26 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { companyAddress } from "@/data/site";
 
 type MapFrameProps = {
-  apiKey?: string;
   query?: string;
 };
 
-function MapFrame({ apiKey, query = "Samarqand" }: MapFrameProps) {
-  if (!apiKey) {
-    return (
-      <div className="flex min-h-[360px] items-center justify-center rounded-[28px] border border-dashed border-brand-blue/25 bg-slate-50 p-8 text-center text-slate-500">
-        Xarita bu yerda ko&#39;rinadi
-      </div>
-    );
-  }
-
-  const src = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${encodeURIComponent(query)}`;
+function MapFrame({ query = "Samarqand" }: MapFrameProps) {
+  const src =
+    "https://www.openstreetmap.org/export/embed.html?bbox=66.92%2C39.63%2C67.03%2C39.69&layer=mapnik&marker=39.6542%2C66.9750";
 
   return (
-    <iframe
-      title="SAMGEODEZIST MCHJ xaritasi"
-      src={src}
-      className="min-h-[360px] w-full rounded-[28px] border-0"
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    />
+    <div className="overflow-hidden rounded-[28px] border border-slate-200">
+      <iframe
+        title={`OpenStreetMap - ${query}`}
+        src={src}
+        className="min-h-[360px] w-full border-0"
+        loading="lazy"
+      />
+    </div>
   );
 }
 
 export function MapSection() {
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-
   return (
     <section className="pb-16 sm:pb-20">
       <Container>
@@ -39,10 +30,20 @@ export function MapSection() {
           <SectionHeading
             eyebrow="Joylashuv"
             title="Ofis joylashuvi"
-            description="API kalit qo'shilganda bu yerda interaktiv xarita ko'rinadi."
+            description="OpenStreetMap asosidagi xaritada ofis joylashuvi ko'rsatilgan."
           />
           <div className="mt-6">
-            <MapFrame apiKey={apiKey} query={companyAddress} />
+            <MapFrame query={companyAddress} />
+          </div>
+          <div className="mt-4">
+            <a
+              href="https://www.openstreetmap.org/?mlat=39.6542&mlon=66.9750#map=16/39.6542/66.9750"
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm font-semibold text-brand-blue transition hover:text-brand-navy"
+            >
+              OpenStreetMap’da ochish
+            </a>
           </div>
         </div>
       </Container>

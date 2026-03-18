@@ -2,6 +2,7 @@ import type {
   Advantage,
   ContactChannel,
   NavItem,
+  Post,
   Project,
   ProcessStep,
   Service,
@@ -18,8 +19,9 @@ export const workingHours = "Dushanba - Shanba, 09:00 - 18:00";
 
 export const navigation: NavItem[] = [
   { label: "Xizmatlar", href: "#xizmatlar" },
+  { label: "Bizning ishlar", href: "#bizning-ishlar" },
+  { label: "Postlar", href: "#postlar" },
   { label: "Biz haqimizda", href: "/biz-haqimizda" },
-  { label: "Afzalliklar", href: "#afzalliklar" },
   { label: "Aloqa", href: "#aloqa" },
 ];
 
@@ -153,19 +155,19 @@ export const advantages: Advantage[] = [
 
 export const stats: Stat[] = [
   {
-    value: "150+",
+    value: "1000+",
     label: "Bajarilgan obyektlar",
-    description: "Turli hajmdagi yer va qurilish obyektlari bo'yicha amaliy ishlar.",
+    description: "Turli hajmdagi yer va qurilish obyektlari bo'yicha bajarilgan amaliy ishlar.",
+  },
+  {
+    value: "10+",
+    label: "Xizmat yo'nalishlari",
+    description: "Geodeziya, topografiya va muhandislik yo'nalishlari bo'yicha ko'p turdagi xizmatlar.",
   },
   {
     value: "24/7",
     label: "Murojaat qabul qilish",
     description: "Buyurtmalarni qabul qilish va tezkor qayta aloqa jarayoni yo'lga qo'yilgan.",
-  },
-  {
-    value: "5",
-    label: "Asosiy xizmat yo'nalishi",
-    description: "Geodeziya, topografiya, geologiya, marksheyderiya va loyihalash.",
   },
   {
     value: "Aniq",
@@ -176,16 +178,16 @@ export const stats: Stat[] = [
 
 export const trustItems: TrustItem[] = [
   {
-    title: "Professional uskunalar",
-    description: "O'lchov ishlari zamonaviy geodezik asboblar va raqamli yondashuv bilan bajariladi.",
+    title: "Total Station",
+    description: "Maydon olchovlari yuqori aniqlikdagi total station uskunalari bilan bajariladi.",
   },
   {
-    title: "Texnik hujjatlash",
-    description: "Natijalar tartibli, topshirishga tayyor va keyingi loyiha jarayonlari uchun qulay shaklda beriladi.",
+    title: "Elektron taxeometr",
+    description: "Elektron taxeometr yordamida nuqtalar, masofalar va balandliklar aniq qayd qilinadi.",
   },
   {
-    title: "Qurilish va kadastrga mos",
-    description: "Xizmatlar yer uchastkasi, bino, inshoot va qurilish maydoni ehtiyojlariga moslashtiriladi.",
+    title: "Tezkor chiqish",
+    description: "Buyurtma bo'yicha joyiga chiqib, dalada va ofisda tezkor ish tashkil qilinadi.",
   },
 ];
 
@@ -224,8 +226,8 @@ export const projects: Project[] = [
 
 export const showcaseItems: ShowcaseItem[] = [
   {
-    title: "Total station bilan maydon o'lchovi",
-    description: "Mutaxassislar obyektga chiqib geodeziya asboblari yordamida o'lchov va belgilash ishlarini bajaradi.",
+    title: "Total station bilan maydon olchovi",
+    description: "Mutaxassislar obyektga chiqib geodeziya asboblari yordamida olchov va belgilash ishlarini bajaradi.",
     image: "/images/showcase-field.svg",
   },
   {
@@ -237,6 +239,27 @@ export const showcaseItems: ShowcaseItem[] = [
     title: "Geodezik nazorat va monitoring",
     description: "Qurilish maydonida geodezik tekshiruv, aniqlik nazorati va bosqichma-bosqich monitoring olib boriladi.",
     image: "/images/showcase-control.svg",
+  },
+];
+
+export const posts: Post[] = [
+  {
+    title: "Topografik syomka ishlari qanday bajariladi",
+    description: "Topografik syomka jarayonidagi bosqichlar, maydon ishlari va yakuniy hujjatlar haqida qisqacha.",
+    date: "18.03.2026",
+    href: "/biz-haqimizda",
+  },
+  {
+    title: "Total station va elektron taxeometr afzalliklari",
+    description: "Zamonaviy uskunalar yordamida geodezik olchovlarda qanday aniqlik olinishi haqida.",
+    date: "18.03.2026",
+    href: "/biz-haqimizda",
+  },
+  {
+    title: "Buyurtma berishdan topshirishgacha bo'lgan jarayon",
+    description: "Mijoz so'rovi qabul qilingandan keyin obyekt bo'yicha ish qanday tashkil qilinishi haqida.",
+    date: "18.03.2026",
+    href: "/biz-haqimizda",
   },
 ];
 

@@ -6,6 +6,7 @@ import { ContactForm } from "@/components/sections/ContactForm";
 import { ContactInfo } from "@/components/sections/ContactInfo";
 import { Hero } from "@/components/sections/Hero";
 import { MapSection } from "@/components/sections/MapSection";
+import { NewsSection } from "@/components/sections/NewsSection";
 import { Process } from "@/components/sections/Process";
 import { Services } from "@/components/sections/Services";
 import { Showcase } from "@/components/sections/Showcase";
@@ -42,12 +43,13 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
-        <Stats />
         <Services />
+        <Showcase />
+        <Stats />
+        <NewsSection />
         <About />
         <WhyUs />
         <Process />
-        <Showcase />
         <ContactForm />
         <ContactInfo />
         <MapSection />
