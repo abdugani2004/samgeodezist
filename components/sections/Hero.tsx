@@ -15,7 +15,7 @@ export function Hero() {
         <div className="grid items-center gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-10">
           <div className="relative">
             <p className="hero-chip hero-chip-accent inline-flex rounded-full border border-brand-gold/30 bg-brand-gold/10 px-4 py-2 text-sm font-semibold text-brand-navy">
-              Samarqand bo&#39;ylab geodeziya va topografiya xizmatlari
+              O&#39;zbekiston va Samarqand bo&#39;ylab geodeziya va topografiya xizmatlari
             </p>
             <h1 className="mt-5 max-w-3xl text-4xl font-bold leading-[1.02] text-brand-navy sm:text-5xl lg:max-w-2xl lg:text-[4.2rem]">
               O&#39;zbekiston bo&#39;ylab geodeziya va topografiya xizmatlari
