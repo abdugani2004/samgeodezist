@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { PropsWithChildren } from "react";
 import { companyName, navigation, phoneNumbers } from "@/data/site";
+import { FloatingContact } from "@/components/layout/FloatingContact";
 import { Header } from "@/components/layout/Header";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
@@ -12,6 +13,7 @@ export function PageShell({ children }: PropsWithChildren) {
 
   return (
     <div className="min-h-screen bg-white text-brand-ink">
+      <FloatingContact />
       <div className="lg:hidden">
         <Header />
       </div>
