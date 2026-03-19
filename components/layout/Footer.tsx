@@ -20,7 +20,7 @@ export function Footer() {
             <h3 className="mt-3 text-2xl font-bold">{companyName}</h3>
             <p className="mt-4 max-w-md text-sm leading-7 text-slate-300">
               Yer uchastkalari, qurilish obyektlari va loyihalar uchun professional geodeziya,
-              topografiya va muhandislik xizmatlari.
+              muhandislik geologiyasi va muhandislik xizmatlari.
             </p>
             <div className="mt-6 rounded-[28px] border border-white/10 bg-white/5 p-5 backdrop-blur">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">

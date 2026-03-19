@@ -33,7 +33,7 @@ export function About() {
               <SectionHeading
                 eyebrow="Kompaniya"
                 title={`${companyName} haqida`}
-                description="Samarqandda geodeziya, topografiya, geologiya va loyihalash xizmatlarini aniq o'lchov hamda tartibli hujjatlar asosida taqdim etamiz."
+                description="Samarqandda geodeziya, muhandislik geologiyasi va loyihalash xizmatlarini aniq o'lchov hamda tartibli hujjatlar asosida taqdim etamiz."
               />
               <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600">
                 Zamonaviy uskunalar va amaliy tajriba yordamida yer uchastkalari, bino-inshootlar

@@ -8,14 +8,14 @@ import { companyName, siteUrl } from "@/data/site";
 export const metadata: Metadata = {
   title: "Bosh sahifa",
   description:
-    "SAMGEODEZIST MCHJ Samarqand bo'ylab geodeziya, topografiya, geologiya, marksheyderiya va loyihalash xizmatlarini taqdim etadi.",
+    "SAMGEODEZIST MCHJ Samarqand bo'ylab geodeziya, muhandislik geologiyasi, marksheyderiya va loyihalash xizmatlarini taqdim etadi.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: `${companyName} - professional geodeziya xizmatlari`,
     description:
-      "Yer uchastkalarini o'lchash, topografik plan tayyorlash, geologiya va loyihalash xizmatlari.",
+      "Yer uchastkalarini o'lchash, muhandislik geologiyasi va loyihalash xizmatlari.",
     url: siteUrl,
     images: [
       {

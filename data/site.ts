@@ -29,53 +29,36 @@ export const phoneNumbers = ["+998 97 919 11 83", "+998 91 550 02 91"];
 
 export const services: Service[] = [
   {
-    slug: "topografiya",
-    title: "Topografiya",
-    description:
-      "Hududning aniq topografik planini tayyorlab, qurilish va loyihalash jarayonlari uchun ishonchli asos yaratamiz.",
-    icon: "map",
-    metric: "Topoplan",
-    outcome: "Loyiha uchun tayyor asos",
-    image: "/images/service-topografiya.svg",
-    detailTitle: "Topografik plan va hudud tahlili",
-    detailDescription:
-      "Topografiya xizmati hudud relyefi, mavjud inshootlar va kommunikatsiyalarni aniqlab, loyiha ishlari uchun zarur texnik asosni tayyorlashga xizmat qiladi.",
-    bullets: [
-      "Hudud relyefi va belgilarini o'lchash",
-      "Kommunikatsiyalar va obyektlarni plan asosida ko'rsatish",
-      "Qurilish va loyihalashga mos topografik material tayyorlash",
-    ],
-  },
-  {
     slug: "geodeziya",
     title: "Geodeziya",
     description:
-      "Yer uchastkalari, bino va inshootlar bo'yicha o'lchov ishlari zamonaviy geodezik usullar bilan bajariladi.",
+      "Yer uchastkalari, bino va inshootlar bo'yicha o'lchov, topoplan va belgilash ishlari zamonaviy geodezik usullar bilan bajariladi.",
     icon: "target",
-    metric: "Aniq o'lchov",
-    outcome: "Maydon va koordinata nazorati",
+    metric: "O'lchov",
+    outcome: "Maydon, koordinata va topoplan nazorati",
     image: "/images/service-geodeziya.svg",
-    detailTitle: "Yer va obyektlar bo'yicha aniq geodezik ishlar",
+    detailTitle: "Yer va obyektlar bo'yicha geodezik va topoplan ishlari",
     detailDescription:
-      "Geodeziya xizmatlari yer uchastkalari, bino va inshootlar bo'yicha koordinata, o'lchov va nazorat ishlarini bajarishga qaratilgan.",
+      "Geodeziya xizmati yer uchastkalari, bino va inshootlar bo'yicha koordinata, o'lchov, topoplan va nazorat ishlarini bajarishga qaratilgan.",
     bullets: [
       "Yer uchastkasi chegaralari va nuqtalarini aniqlash",
+      "Topoplan va maydon holatini o'lchov asosida tayyorlash",
       "Qurilish uchun geodezik belgilash ishlarini bajarish",
       "Maydon bo'yicha nazorat va qayta tekshiruvlarni tashkil qilish",
     ],
   },
   {
     slug: "geologiya",
-    title: "Geologiya",
+    title: "Muhandislik geologiyasi",
     description:
       "Hududning geologik holatini baholab, loyiha va qurilish uchun zarur dastlabki ma'lumotlarni taqdim etamiz.",
     icon: "layers",
     metric: "Tahlil",
     outcome: "Qurilish uchun dastlabki xulosa",
     image: "/images/service-geologiya.svg",
-    detailTitle: "Hududning geologik holatini baholash",
+    detailTitle: "Muhandislik geologiyasi bo'yicha hudud tahlili",
     detailDescription:
-      "Geologiya yo'nalishi qurilishdan oldin hududning tabiiy holatini o'rganish va texnik qarorlar uchun ma'lumot tayyorlashga yordam beradi.",
+      "Muhandislik geologiyasi yo'nalishi qurilishdan oldin hududning tabiiy holatini o'rganish va texnik qarorlar uchun ma'lumot tayyorlashga yordam beradi.",
     bullets: [
       "Hudud bo'yicha geologik ma'lumotlarni yig'ish",
       "Qurilish ehtiyojlari uchun dastlabki xulosalar tayyorlash",
@@ -162,7 +145,7 @@ export const stats: Stat[] = [
   {
     value: "10+",
     label: "Xizmat yo'nalishlari",
-    description: "Geodeziya, topografiya va muhandislik yo'nalishlari bo'yicha ko'p turdagi xizmatlar.",
+    description: "Geodeziya, muhandislik geologiyasi va muhandislik yo'nalishlari bo'yicha ko'p turdagi xizmatlar.",
   },
   {
     value: "24/7",

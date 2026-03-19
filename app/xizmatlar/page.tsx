@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `${companyName} xizmatlari`,
-    description: "Geodeziya, topografiya, geologiya va boshqa xizmatlar sahifasi.",
+    description: "Geodeziya, muhandislik geologiyasi va boshqa xizmatlar sahifasi.",
     url: `${siteUrl}/xizmatlar`,
   },
 };

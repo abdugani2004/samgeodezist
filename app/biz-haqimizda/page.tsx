@@ -39,7 +39,7 @@ const companyFacts = [
   },
   {
     label: "Asosiy yo'nalishlar",
-    value: "Geodeziya, topografiya, geologiya, loyihalash",
+    value: "Geodeziya, muhandislik geologiyasi, loyihalash",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 {companyName} Samarqanddagi geodeziya va muhandislik xizmatlari bilan shug&#39;ullanadi
               </h1>
               <p className="mt-5 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-                Kompaniya 2017-yildan beri geodeziya, topografiya, geologiya va loyihalash
+                Kompaniya 2017-yildan beri geodeziya, muhandislik geologiyasi va loyihalash
                 yo&#39;nalishlarida faoliyat yuritib keladi. Biz yer uchastkalari, bino-inshootlar va
                 qurilish maydonlari uchun aniq olchov, texnik tahlil hamda hujjatlashtirish
                 xizmatlarini ko&#39;rsatamiz.

@@ -63,7 +63,7 @@ export function Hero() {
             </div>
 
             <div className="mt-5 -mx-1 overflow-x-auto pb-1">
-              <div className="flex min-w-max gap-3 px-1 lg:grid lg:min-w-0 lg:grid-cols-5">
+              <div className="flex min-w-max gap-3 px-1 lg:grid lg:min-w-0 lg:grid-cols-4">
                 {services.map((service) => (
                   <Link
                     key={service.slug}
@@ -79,7 +79,7 @@ export function Hero() {
             <div className="mt-8 grid items-end gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
               <div className="relative">
                 <p className="hero-chip hero-chip-accent inline-flex max-w-full rounded-[22px] border border-brand-gold/30 bg-brand-gold/10 px-4 py-2.5 text-center text-sm font-semibold leading-6 text-brand-gold sm:rounded-full sm:px-6 sm:py-3.5 sm:text-2xl sm:leading-normal">
-                  O&#39;zbekiston bo&#39;ylab geodeziya va topografiya xizmatlari
+                  O&#39;zbekiston bo&#39;ylab geodeziya va muhandislik xizmatlari
                 </p>
 
                 <h1 className="mt-4 max-w-[12ch] text-[1.45rem] font-bold leading-[1.02] text-white sm:mt-5 sm:text-3xl lg:text-[2.5rem]">
@@ -87,7 +87,7 @@ export function Hero() {
                 </h1>
 
                 <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-200 sm:mt-5 sm:text-lg sm:leading-7">
-                  Samarqand va boshqa hududlarda yer o&#39;lchash, topoplan, geologiya,
+                  Samarqand va boshqa hududlarda yer o&#39;lchash, muhandislik geologiyasi,
                   loyihalash va texnik hujjatlar bo&#39;yicha aniq hamda tezkor xizmat
                   ko&#39;rsatamiz.
                 </p>

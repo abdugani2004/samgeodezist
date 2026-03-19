@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     template: "%s | SAMGEODEZIST MCHJ",
   },
   description:
-    "Samarqand bo'ylab professional geodeziya, topografiya, geologiya va loyihalash xizmatlari.",
+    "Samarqand bo'ylab professional geodeziya, muhandislik geologiyasi va loyihalash xizmatlari.",
   keywords: [
     "geodeziya Samarqand",
-    "topografiya Samarqand",
+    "muhandislik geologiyasi Samarqand",
     "geologiya xizmati",
     "marksheyderiya",
     "loyihalash xizmatlari",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: companyName,
     title: companyName,
     description:
-      "Samarqand bo'ylab professional geodeziya, topografiya, geologiya va loyihalash xizmatlari.",
+      "Samarqand bo'ylab professional geodeziya, muhandislik geologiyasi va loyihalash xizmatlari.",
     locale: "uz_UZ",
   },
 };
