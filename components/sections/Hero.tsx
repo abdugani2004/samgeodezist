@@ -149,18 +149,15 @@ export function Hero() {
                         className="h-[260px] w-full object-cover object-center sm:h-[420px] lg:h-[520px]"
                       />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(3,9,20,0.72)_100%)]" />
-
-                      <div className="absolute left-3 top-4 sm:left-4 sm:top-10">
-                        <div className="rounded-[18px] border border-white/20 bg-brand-navy/65 px-3.5 py-3 backdrop-blur sm:rounded-[20px] sm:px-4">
-                          <p className="text-xs uppercase tracking-[0.24em] text-brand-gold">
-                            Bizning jamoa
-                          </p>
-                          <p className="mt-2 text-sm font-semibold text-white">
-                            Real obyektlardagi amaliy ishlar
-                          </p>
-                        </div>
-                      </div>
                     </div>
+                  </div>
+                  <div className="mt-3 rounded-[18px] border border-white/15 bg-brand-navy/65 px-4 py-3 backdrop-blur sm:mt-4 sm:rounded-[20px] sm:px-5">
+                    <p className="text-xs uppercase tracking-[0.24em] text-brand-gold">
+                      Bizning jamoa
+                    </p>
+                    <p className="mt-2 text-sm font-semibold text-white">
+                      Real obyektlardagi amaliy ishlar
+                    </p>
                   </div>
                 </div>
               </div>
