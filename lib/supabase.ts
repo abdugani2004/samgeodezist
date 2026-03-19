@@ -2,13 +2,20 @@ import type { ShowcaseItem, WorkItem } from "@/types";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+function getReadAccessToken() {
+  return supabaseServiceRoleKey || supabaseAnonKey;
+}
 
 export function isSupabaseConfigured() {
-  return Boolean(supabaseUrl && supabaseAnonKey);
+  return Boolean(supabaseUrl && getReadAccessToken());
 }
 
 export async function getWorksFromSupabase(): Promise<ShowcaseItem[]> {
-  if (!supabaseUrl || !supabaseAnonKey) {
+  const accessToken = getReadAccessToken();
+
+  if (!supabaseUrl || !accessToken) {
     return [];
   }
 
@@ -16,8 +23,8 @@ export async function getWorksFromSupabase(): Promise<ShowcaseItem[]> {
     `${supabaseUrl}/rest/v1/works?select=id,title,description,image_url`,
     {
       headers: {
-        apikey: supabaseAnonKey,
-        Authorization: `Bearer ${supabaseAnonKey}`,
+        apikey: accessToken,
+        Authorization: `Bearer ${accessToken}`,
       },
       next: {
         revalidate: 60,
@@ -41,14 +48,16 @@ export async function getWorksFromSupabase(): Promise<ShowcaseItem[]> {
 }
 
 export async function getRawWorksFromSupabase(): Promise<WorkItem[]> {
-  if (!supabaseUrl || !supabaseAnonKey) {
+  const accessToken = getReadAccessToken();
+
+  if (!supabaseUrl || !accessToken) {
     return [];
   }
 
   const response = await fetch(`${supabaseUrl}/rest/v1/works?select=id,title,description,image_url`, {
     headers: {
-      apikey: supabaseAnonKey,
-      Authorization: `Bearer ${supabaseAnonKey}`,
+      apikey: accessToken,
+      Authorization: `Bearer ${accessToken}`,
     },
     cache: "no-store",
   });
