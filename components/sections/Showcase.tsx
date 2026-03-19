@@ -2,8 +2,13 @@ import Image from "next/image";
 import { showcaseItems } from "@/data/site";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import type { ShowcaseItem } from "@/types";
 
-export function Showcase() {
+type ShowcaseProps = {
+  items?: ShowcaseItem[];
+};
+
+export function Showcase({ items = showcaseItems }: ShowcaseProps) {
   return (
     <section id="bizning-ishlar" className="relative py-16 sm:py-20">
       <div className="absolute right-0 top-16 h-44 w-44 rounded-full bg-brand-blue/10 blur-3xl" />
@@ -15,9 +20,9 @@ export function Showcase() {
         />
 
         <div className="mt-10 grid gap-5 lg:grid-cols-3">
-          {showcaseItems.map((item) => (
+          {items.map((item) => (
             <article
-              key={item.title}
+              key={`${item.title}-${item.image}`}
               className="panel surface-highlight overflow-hidden rounded-[24px] hover:-translate-y-1 hover:border-brand-gold/30"
             >
               <div className="relative h-52 overflow-hidden sm:h-56">
