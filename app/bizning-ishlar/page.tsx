@@ -24,7 +24,7 @@ export const dynamic = "force-dynamic";
 
 export default async function WorksPage() {
   const remoteWorks = await getWorksFromSupabase();
-  const works = remoteWorks.length > 0 ? remoteWorks : showcaseItems;
+  const works = [...remoteWorks, ...showcaseItems];
 
   return (
     <PageShell>
