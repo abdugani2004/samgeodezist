@@ -48,7 +48,9 @@ export function Hero() {
 
               <div className="space-y-1">
                 <p className="text-xs uppercase tracking-[0.22em] text-slate-300">Aloqa</p>
-                <p className="break-all text-sm font-semibold text-white sm:text-base">{companyEmail}</p>
+                <p className="break-all text-sm font-semibold leading-6 text-white sm:text-base">
+                  {companyEmail}
+                </p>
                 <p className="text-sm text-white/85 sm:text-base">{workingHours}</p>
               </div>
 
@@ -66,7 +68,7 @@ export function Hero() {
                   <Link
                     key={service.slug}
                     href={`/xizmatlar#${service.slug}`}
-                    className="min-w-[144px] rounded-[20px] border border-white/12 bg-brand-blue/75 px-4 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-brand-blue lg:min-w-0 lg:py-4"
+                    className="min-w-[132px] rounded-[18px] border border-white/12 bg-brand-blue/75 px-3.5 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-brand-blue sm:min-w-[144px] sm:px-4 lg:min-w-0 lg:py-4"
                   >
                     {service.title}
                   </Link>
@@ -76,11 +78,11 @@ export function Hero() {
 
             <div className="mt-8 grid items-end gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
               <div className="relative">
-                <p className="hero-chip hero-chip-accent inline-flex rounded-full border border-brand-gold/30 bg-brand-gold/10 px-4 py-2.5 text-sm font-semibold text-brand-gold sm:px-5 sm:py-3 sm:text-lg">
+                <p className="hero-chip hero-chip-accent inline-flex max-w-full rounded-[22px] border border-brand-gold/30 bg-brand-gold/10 px-4 py-2.5 text-center text-sm font-semibold leading-6 text-brand-gold sm:rounded-full sm:px-6 sm:py-3.5 sm:text-2xl sm:leading-normal">
                   O&#39;zbekiston bo&#39;ylab geodeziya va topografiya xizmatlari
                 </p>
 
-                <h1 className="mt-4 max-w-[11ch] text-[2rem] font-bold leading-[0.98] text-white sm:mt-5 sm:text-5xl lg:text-[5rem]">
+                <h1 className="mt-4 max-w-[12ch] text-[1.45rem] font-bold leading-[1.02] text-white sm:mt-5 sm:text-3xl lg:text-[2.5rem]">
                   Geodeziya ishlari uchun kuchli texnik jamoa
                 </h1>
 
