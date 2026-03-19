@@ -150,42 +150,13 @@ export function Hero() {
                       />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_35%,rgba(3,9,20,0.72)_100%)]" />
 
-                      <div className="absolute left-3 right-3 top-4 flex flex-col gap-3 sm:left-4 sm:right-4 sm:top-10 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+                      <div className="absolute left-3 top-4 sm:left-4 sm:top-10">
                         <div className="rounded-[18px] border border-white/20 bg-brand-navy/65 px-3.5 py-3 backdrop-blur sm:rounded-[20px] sm:px-4">
                           <p className="text-xs uppercase tracking-[0.24em] text-brand-gold">
                             Bizning jamoa
                           </p>
                           <p className="mt-2 text-sm font-semibold text-white">
                             Real obyektlardagi amaliy ishlar
-                          </p>
-                        </div>
-
-                        <div className="rounded-[18px] border border-white/20 bg-white/12 px-3.5 py-3 backdrop-blur sm:rounded-[20px] sm:px-4 sm:text-right">
-                          <p className="text-xs uppercase tracking-[0.24em] text-slate-300">
-                            Hudud
-                          </p>
-                          <p className="mt-2 text-sm font-semibold text-white">
-                            Samarqand va viloyatlar
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="absolute inset-x-3 bottom-3 grid gap-3 sm:inset-x-4 sm:bottom-4 sm:grid-cols-2">
-                        <div className="rounded-[18px] border border-white/15 bg-brand-blue/70 px-3.5 py-3.5 backdrop-blur sm:rounded-[22px] sm:px-4 sm:py-4">
-                          <p className="text-xs uppercase tracking-[0.22em] text-brand-gold">
-                            Maydon ishlari
-                          </p>
-                          <p className="mt-2 text-sm font-semibold text-white">
-                            Obyektga chiqib o&#39;lchov, belgilash va nazorat ishlari
-                          </p>
-                        </div>
-
-                        <div className="rounded-[18px] border border-white/15 bg-black/35 px-3.5 py-3.5 backdrop-blur sm:rounded-[22px] sm:px-4 sm:py-4">
-                          <p className="text-xs uppercase tracking-[0.22em] text-slate-300">
-                            Hujjatlar
-                          </p>
-                          <p className="mt-2 text-sm font-semibold text-white">
-                            Topoplan, koordinata va texnik materiallar tayyorlanadi
                           </p>
                         </div>
                       </div>
